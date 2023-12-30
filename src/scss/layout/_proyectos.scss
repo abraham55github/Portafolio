@@ -1,0 +1,58 @@
+@use 'base/mixins' as m;
+@use 'base/variable' as v;
+
+.proyectos {
+    padding: 8rem 0;
+    text-align: center;
+
+    
+}
+
+.proyectos-enlaces{
+    @include m.grid(1, 2rem);
+    @include m.tablet {
+        @include m.grid(2, 2rem);
+    }
+}
+.proyectos-contenedor {
+    row-gap: 2rem;
+}
+
+.proyectos-links {
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: 0.55rem;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+
+}
+
+.proyectos-links img {
+    transition: 1s;
+    cursor: pointer;
+    width: 350px;
+    height: 230px;
+    object-fit: contain;
+}
+
+.proyectos-links img:hover {
+    transform: scale(1.05);
+}
+
+.proyecto-link-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.53rem;
+}
+
+.proyecto-item {
+    font-size: 2.3rem;
+    padding: 0 1rem;
+    color: v.$negro;
+}
+
+.proyecto-item:hover {
+    color: v.$verde;
+}

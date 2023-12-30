@@ -1,0 +1,57 @@
+@use 'base/mixins' as m;
+@use 'base/variable' as v;
+
+.skills{
+    padding: 8rem 4rem;
+    h3 {
+        text-align: center;
+    }
+
+}
+
+.lenguajes-imagenes{
+    @include m.resetear-lista;
+    @include m.grid(3, 2rem);
+    @include m.telefono {
+        @include m.grid(5, 1rem);
+    }
+    @include m.tablet {
+        @include m.grid(5, 10rem);
+    }
+
+}
+.lenguajes-imagenes img:hover{
+    transform: scale(1.3);
+}
+
+.frameworks-imagenes{
+    @include m.resetear-lista;
+    @include m.grid(3, 2rem);
+    @include m.telefono {
+        @include m.grid(4, 1rem);
+    }
+    @include m.tablet {
+        @include m.grid(4, 10rem);
+    }
+}
+
+.tecnologias-imagenes{
+    @include m.resetear-lista;
+    @include m.grid(3, 2rem);
+    @include m.telefono {
+        @include m.grid(5, 1rem);
+    }
+    @include m.tablet {
+        @include m.grid(5, 7rem);
+    }
+}
+
+.lenguajes-imagenes img:hover,
+.frameworks-imagenes img:hover,
+.tecnologias-imagenes img:hover{
+    transform: scale(1.4);
+    @include m.telefono {
+        transform: scale(1.3);
+    }
+  
+}

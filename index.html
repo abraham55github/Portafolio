@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Abraham Otero</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body class="body-scroll">
+    <!-- header -->
+    <header class="header fijo">
+        <div class="navegacion-principal contenedor">
+            <img class="logo" src="./build/img/logoinicio.png" alt="logo">
+            <button id="abrir" class="abrir-menu"><i class='bx bx-menu'></i></button>
+            <nav class="nav" id="nav">
+                <button id="cerrar" class="cerrar-menu"><i class='bx bx-window-close' ></i></button> 
+                <ul class="nav-list">
+                    <li><a href="#video">Inicio</a></li>
+                    <li><a href="#sobreMi">Sobre mi</a></li>
+                    <li><a href="#proyecto">Proyectos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seccion donde esta el video -->
+    <section id="video">
+        <div class="video">
+            <div class="overlay">
+                <div class="contenedor contenido-video">
+                    <h2>Abraham Julio Otero Gonzalez</h2>
+                    <p>Panamá, Panamá</p>
+                </div>
+            </div>
+            <video autoplay muted loop>
+                <source src="video/PinkParticles.mp4" type="video/mp4">
+                <source src="video/PinkParticles.ogg" type="video/ogg">
+                <source src="video/PinkParticles.webm" type="video/webm">
+                
+            </video>
+        </div>
+    </section>
+
+    <!-- seccion sobre mi-->
+    <section id="sobreMi" class="contenedor sobre-mi">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/sobreMi/sobre-mi.avif" type="image/avif">
+                <source srcset="build/img/sobreMi/sobre-mi.webp" type="image/webp">
+
+                <img loading="lazy" width="200" height="300" src="build/img/sobreMi/sobre-mi.jpg" alt="imagen sobreMi">
+            </picture>
+
+        </div>
+        <div class="contenido-sobremi">
+            <h2>Hola, Soy abraham</h2>
+            <a href="https://docs.google.com/document/d/1XxukAGJUq5ra_DErLP19FwJaxNdkudnM/edit?usp=sharing&ouid=103640693785937084855&rtpof=true&sd=true" target="_blank" class="button">
+                Ver CV
+            </a>
+            <p>Estudiante de Ingeniería de Sistemas y Computación apasionado por la programación y las 
+                TI (tecnologías de la información). Busco sumergirme en proyectos desafiantes y colaborativos 
+                para ampliar mi experiencia. ¡Listo para aportar y aprender en equipos dedicados a la innovación 
+                tecnológica!.
+            </p>
+            <div class="iconos-sobremi">
+                <a href="https://github.com/abraham55github" target="_blank" class="icon-sobremi">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abraham-otero-71ba2025a/" target="_blank" class="icon-sobremi">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=abraham.otero555@gmail.com" target="_blank" class="icon-sobremi">
+                    <i class="bx bxl-gmail"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion proyecto -->
+    <section id="proyecto" class="proyectos contenedor">
+        <h3> Proyectos </h3>
+        <div class="proyectos-contenedor">
+            <div class="proyectos-enlaces">
+                
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- seccion de habilidades-->
+    <section id="skills" class="skills contenedor">
+        <h3> Habilidades </h3>
+        <h4>Lenguajes</h4>
+        <ul class="lenguajes-imagenes"></ul>
+        <h4>Frameworks y librerias</h4>
+        <ul class="frameworks-imagenes"></ul>
+        <h4>Tecnologias y herramientas</h4>
+        <ul class="tecnologias-imagenes"></ul>
+        
+    </section>
+
+    <!-- seccion contacto-->
+    <section id="contacto" class="contacto">
+        <h3> Contacto </h3>
+        <p class="textoContacto">Contacto por medio de llamada o chat vía email y LinkedIn.</p>
+        <div data-aos="fade-down" class="contacto-socialMedia">
+            <div class="contacto-email ">
+                <i class="bx bx-envelope icon"></i>
+                <address class="contacto-email-contenido">abraham.otero555@gmail.com</address>
+            </div>
+            <div class="contacto-celular">
+                <i class="bx bxs-phone icon"></i>
+                <span class="contacto-celular-contenido"> Celular: +507 6905-6225</span>
+            </div>
+            <div class="iconos-social">
+                <a href="https://www.linkedin.com/in/abraham-otero-71ba2025a/" target="_blank" class="icon-contact">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=abraham.otero555@gmail.com" target="_blank" class="icon-contact">
+                    <i class="bx bxl-gmail"></i>
+                </a>
+
+            
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-texto">
+            <p>Gracias por su atención</p>
+        </div>
+        <div class="footer-coopyright">
+            <p>Creado por <a href="https://github.com/abraham55github" target="_blank"> Abraham55 </a>
+            | Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+    <script src="build/js/app.js"></script>
+</body>
+</html>
